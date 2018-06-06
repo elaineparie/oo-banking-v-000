@@ -21,7 +21,7 @@ x = sender.balance - @amount
 y = receiver.balance + @amount
 sender.balance = x
 receiver.balance = y
-status = "complete"
+@status = "complete"
 end
 end
 
