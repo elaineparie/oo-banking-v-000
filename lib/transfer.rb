@@ -17,11 +17,10 @@ def execute_transaction
   if !valid?
     "Transaction rejected. Please check your account balance."
   else
-x = sender.balance - @amount
-y = receiver.balance + @amount
-sender.balance = x
-receiver.balance = y
-binding.pry
+sender.balance = sender.balance - @amount
+receiver.balance = receiver.balance + @amount
+#sender.balance = x
+#receiver.balance = y
 @status = "complete"
 end
 end
