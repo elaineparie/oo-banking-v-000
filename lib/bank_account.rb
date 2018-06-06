@@ -23,8 +23,8 @@ def valid?
   end
 end
 
-def close_account 
+def close_account
   @status = "closed"
-end 
+end
 
 end
