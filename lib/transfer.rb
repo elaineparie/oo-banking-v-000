@@ -16,6 +16,7 @@ end
 def execute_transaction
 x = receiver.balance - @amount
 x
+binding.pry
 end
 
 end
