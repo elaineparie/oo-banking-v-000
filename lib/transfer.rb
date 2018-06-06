@@ -14,7 +14,7 @@ def valid?
 end
 
 def execute_transaction
-x = receiver.balance - @amount
+x = sender.balance - @amount
 x
 binding.pry
 end
