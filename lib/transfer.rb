@@ -15,8 +15,6 @@ end
 
 def execute_transaction
 x = sender.balance - @amount
-x
-binding.pry
 end
 
 end
