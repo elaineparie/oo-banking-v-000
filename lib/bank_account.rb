@@ -18,23 +18,13 @@ def display_balance
   "Your balance is $#{@balance}."
 end
 
-#def valid?
-#  if @status == "closed" || @balance <= 0
-#    false
-#  else
-  #  true
-  #end
-#end
-
 def valid?
-  if @status == "open" && @balance >= 0
-    true
-#    false
-  else
+ if @status == "closed" || @balance <= 0
    false
+ else
+   true
   end
 end
-
 
 def close_account
   @status = "closed"
