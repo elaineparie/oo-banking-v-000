@@ -14,7 +14,7 @@ def valid?
 end
 
 def execute_transaction
-  receiver.balance - @amount 
+x = receiver.balance - @amount
 end
 
 end
