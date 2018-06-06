@@ -14,7 +14,7 @@ def valid?
 end
 
 def execute_transaction
-  if !valid?
+  if valid? == false
     puts "Transaction rejected. Please check your account balance."
     @status = "rejected"
   elsif @status != "complete"
