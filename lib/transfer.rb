@@ -12,11 +12,9 @@ end
 def valid?
   @sender.valid? && @receiver.valid?
 end
-binding.pry
+
 def execute_transaction
-  x = transfer.amount
-  binding.pry
-  receiver.balance - x
+  receiver.balance - @amount 
 end
 
 end
