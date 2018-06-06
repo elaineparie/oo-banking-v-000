@@ -23,5 +23,6 @@ sender.balance = x
 receiver.balance = y
 transfer.status = "complete"
 end
+end
 
 end
