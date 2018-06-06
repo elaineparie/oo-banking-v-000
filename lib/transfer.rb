@@ -15,6 +15,7 @@ end
 
 def execute_transaction
 x = sender.balance - @amount
+y = receiver.balance + @amount 
 end
 
 end
