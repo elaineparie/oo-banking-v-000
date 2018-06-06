@@ -14,7 +14,7 @@ def valid?
 end
 
 def execute_transaction
-  if valid? == false
+  if !valid? 
     puts "Transaction rejected. Please check your account balance."
   else
 sender.balance = sender.balance - @amount
